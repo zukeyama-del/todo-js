@@ -193,6 +193,15 @@ module.hot.accept(reloadCSS);
 "use strict";
 
 require("./styles.css");
+
+var onClickAdd = function onClickAdd() {
+  var inputText = document.getElementById("add-text").value;
+  document.getElementById("add-text").value = "";
+};
+
+document.getElementById("add-button").addEventListener("click", function () {
+  return onClickAdd();
+});
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
